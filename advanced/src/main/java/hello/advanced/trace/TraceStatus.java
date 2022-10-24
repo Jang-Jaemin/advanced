@@ -23,6 +23,7 @@ public class TraceStatus {
         return traceId;
     }
 
+
 }
 
 //  TraceStatus 클래스: 로그의상태정보를나타낸다.
