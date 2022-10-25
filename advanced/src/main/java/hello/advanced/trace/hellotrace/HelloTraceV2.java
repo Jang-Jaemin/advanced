@@ -76,5 +76,9 @@ public class HelloTraceV2 {
         }
         return sb.toString();
     }
+
+    public void end(TraceId traceId, TraceStatus status) {
+
+    }
 }
 
