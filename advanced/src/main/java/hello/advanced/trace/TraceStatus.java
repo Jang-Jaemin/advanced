@@ -24,6 +24,8 @@ public class TraceStatus {
     }
 
 
+    public Long getStartTimeMs() {
+    }
 }
 
 //  TraceStatus 클래스: 로그의상태정보를나타낸다.
