@@ -22,6 +22,9 @@ public class FiedlLogTraceTest {
             trace.exception(status2, new IllegalStateException());
             trace.exception(status1, new IllegalStateException());
         }
+
+    public static class ThreadLocalLogTraceTest {
+    }
 }
 
 
