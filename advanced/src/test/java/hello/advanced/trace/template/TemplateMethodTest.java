@@ -39,6 +39,27 @@ public class TemplateMethodTest {
         template2.execute();
 
     }
+
+    @Test
+    void templateMethodV2(){
+        AbstractTemplate template = new AbstractTemplate(){
+            @Override
+            protected void call(){
+                log.info("비즈니스 로직1 실행");
+            }
+        };
+        log.info("클래스 이름1={}", template1.getClass());
+        template.execute();
+
+        AbstractTemplate template2 = new AbstractTemplate(){
+            @Override
+            protected void call(){
+                log.info("비즈니스 로직1 실행");
+            }
+        };
+        log.info("클래스 이름2={}", template2.getClass());
+        template2.execute();
+    }
 }
 
 //  logic1() , logic2() 를호출하는 단순한테스트코드이다.
@@ -52,3 +73,15 @@ public class TemplateMethodTest {
 
 //  변하는부분: 비즈니스 로직
 //  변하지않는 부분: 시간측정
+
+// 실행 결과 :
+/** 클래스 이름1 class hello.advanced.trace.template.TemplateMethodTest$1
+    비즈니스 로직1 실행
+    resultTime=3
+    클래스 이름2 class hello.advanced.trace.template.TemplateMethodTest$2
+    비즈니스 로직2 실행
+    resultTime=0
+**/
+
+//  실행결과를보면 자바가임의로만들어주는 익명내부클래스 이름은 TemplateMethodTest$1 ,
+//  TemplateMethodTest$2 인것을확인할 수있다.
