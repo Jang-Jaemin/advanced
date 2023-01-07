@@ -42,3 +42,19 @@ public class OrderRepositoryV4 {
 //  [aaaaaaaa] |   |<--OrderRepository.save() time=1004ms
 //  [aaaaaaaa] |<--OrderService.orderItem() time=1006ms
 //  [aaaaaaaa] OrderController.request() time=1007ms
+
+//  정상실행 로그
+//  [aaaaaaaa] OrderController.request()
+//  [aaaaaaaa] |-->OrderService.orderItem()
+//  [aaaaaaaa] |   |-->OrderRepository.save()
+//  [aaaaaaaa] |   |<--OrderRepository.save() time=1004ms
+//  [aaaaaaaa] |<--OrderService.orderItem() time=1006ms
+//  [aaaaaaaa] OrderController.request() time=1007ms
+
+//  정상실행 로그
+//  [aaaaaaaa] OrderController.request()
+//  [aaaaaaaa] |-->OrderService.orderItem()
+//  [aaaaaaaa] |   |-->OrderRepository.save()
+//  [aaaaaaaa] |   |<--OrderRepository.save() time=1004ms
+//  [aaaaaaaa] |<--OrderService.orderItem() time=1006ms
+//  [aaaaaaaa] OrderController.request() time=1007ms
