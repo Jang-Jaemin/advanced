@@ -24,6 +24,17 @@ public class OrderServiceV4 {
         template.execute("OrderService.orderItem()");
     }
  }
+
+//  AbstractTemplate<Void>
+//  제네릭에서 반환타입이필요한데, 반환할내용이 없으면 Void 타입을사용하고 null 을반환하면 된다.
+//  참고로제네릭은기본 타입인 void , int 등을선언할수 없다.
+
+
+//  AbstractTemplate<Void>
+//  제네릭에서 반환타입이필요한데, 반환할내용이 없으면 Void 타입을사용하고 null 을반환하면 된다.
+//  참고로제네릭은기본 타입인 void , int 등을선언할수 없다.
+
+
 //  AbstractTemplate<Void>
 //  제네릭에서 반환타입이필요한데, 반환할내용이 없으면 Void 타입을사용하고 null 을반환하면 된다.
 //  참고로제네릭은기본 타입인 void , int 등을선언할수 없다.
